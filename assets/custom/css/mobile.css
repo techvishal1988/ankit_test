@@ -1,0 +1,97 @@
+
+.margin1 h2{
+	font-size:20px;
+	margin: 27px auto;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+	width:100%;
+    margin: 1px auto;
+}
+
+.centerPart {
+    /* border: 1px solid red; */
+    margin-top: 12px;
+    padding: 1px 0px;
+    color: #ffffff;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.53);
+}
+body{
+	/*background-color:blue;*/
+}
+.margin1 {
+    margin: 40px auto;
+    margin-bottom: 26px;
+}
+
+.leftPart h4 {
+    padding: 6px 5px;
+    padding-bottom: 0px;
+}
+.leftCir {
+    margin: 15px auto;
+    margin-bottom: 15px;
+    /* border: 1px solid red; */
+}
+.centerPart {
+    box-shadow: -1px 0px 7px rgba(0, 0, 0, 0.53);
+}
+.centerPartTop {
+    margin: 11px;
+}
+.centerPartTop h4 {
+padding: 15px 5px;
+}
+
+.centerPartBottom {
+    margin: 11px;
+}
+.centerPartBottom h4 {
+padding: 15px 5px;
+}
+.rightPart {
+    margin-top: 10px;
+    padding: 2px 10px;
+}
+.rightPartSub{
+	padding-top: 10px;
+}
+.rightCir {
+    margin: 0 auto;
+	margin-bottom: 15px;
+}
+.rightCir h2 {
+    padding: 25px 5px;
+    margin-top: 4px;
+}
+.rightPart h4 {
+    padding: 4px 5px;
+    padding-bottom: 4px;
+}
+.topchart{margin-bottom: 10px;}
+.bottomchart{margin-top: 10px;}
+
+.rightPart{	
+	min-height:200px;
+	background-image: url(../img/bgR.jpg);
+	background-attachment: scroll;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;		
+	color:#ffffff;
+        border-right: 1px solid #f5f5f5;
+	/*border:1px solid red;*/
+}
+
+.leftPart{
+	min-height:200px;
+	background-image: url(../img/bgL.jpg);
+	background-attachment: scroll;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+	padding:2px 10px;
+	color:#ffffff;
+        border-left: 1px solid #f5f5f5;
+        border-right: 1px solid #f5f5f5;
+	/*border:1px solid red;*/
+}

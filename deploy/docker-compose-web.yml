@@ -1,0 +1,7 @@
+version: "3.5"
+services:
+  comp-ben-user-app:
+    build: 
+      context: ../
+      dockerfile: ./deploy/Dockerfile-web
+    image: ${REGISTRY_URL_WEB:-829767151170.dkr.ecr.us-west-2.amazonaws.com/comp-ben-user-web}:${DOCKER_BUILD_TAG_WEB:-latest}

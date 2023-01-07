@@ -1,0 +1,318 @@
+h2{
+font-size: 18px;    
+}
+
+.margin1{
+    margin:40px auto;
+    margin-bottom: 100px;
+}
+.margin1 img{
+    margin: 2px auto;
+}
+
+.container1{
+/*border:1px solid red;*/
+margin-bottom: 115px;
+    padding: 6px 0 0 0;
+
+}
+.leftPart{
+    min-height:200px;
+    /*background-image: url(../img/bgL.jpg);*/
+    background-attachment: scroll;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*padding:13px 16px;*/
+    color:#ffffff;
+        /*border-left: 14px solid #f5f5f5;*/
+    /*border:1px solid red;*/
+    color: black;
+    /*border: 1px solid black;*/
+    
+}
+.leftCir{
+    width:80px;
+    height:80px;
+    margin: 23px auto;
+    margin-bottom: 15px;
+    background-image: url(../img/oranges_new.png);
+    background-attachment: scroll;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*border:1px solid red;*/   
+}
+.leftCir h2{
+padding: 25px 5px;
+font-size:25px;
+}
+.leftCir p{
+margin:3px 5px;
+}
+.leftPart h4{
+    font-size:13px;
+   
+    font-weight: 100;
+    /*padding-bottom: 27px;*/
+}
+
+.centerPart{
+    /*border:1px solid red;*/
+    /*margin-top:-160px;*/
+    padding: 30px 9px;
+    color:#ffffff;
+    /*box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.53);*/
+     /*background-image: url(../../../../assets/custom/img/bg-blackColor.png);*/
+}
+.centerPartTop{
+
+    /*background-image: url(../img/bg-blackColor.png);*/
+    /*background-attachment: scroll;*/
+    /*background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border:1px solid black;
+    background-color: black;*/
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+    background-color: black;
+    width: 78%;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px 6px #aaa
+
+}
+.centerPartTop span {
+    right:-20px;
+    /* color:#ffffff; */
+
+}
+.centerPartTop span:hover {
+    opacity:.8;
+}
+.centerPartBottom{
+    /*background-image: url(../img/bgM_bottom.jpg);*/
+    background-attachment: scroll;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    /*border:1px solid red;*/   
+}
+.centerPartBottom span{
+    right:-26px;
+    color: #ffffff;
+}
+.centerPartBottom span:hover {
+    opacity:.8;
+}
+.centerPartBottom a{
+text-decoration:none;
+color:#ffffff;
+}
+
+.centerPartTop h4{
+    padding: 20px 0 0 0px;
+}
+.centerPartTop h5{
+    padding: 15px 5px;  
+}
+
+.centerTopCir{
+    width: 112px;
+    height:80px;
+    /*margin:0px auto;*/
+    margin: -3px 52px 42px 0;
+    /*background-image: url(../img/red_new.png);*/
+    background-attachment: scroll;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13px 0;
+    /*border:1px solid red;*/
+}
+
+.centerTopCir h2, .centerBottomCir h2{
+    font-size: 28px;
+    margin-top: 17px;
+    /* text-align: right; */
+    /* margin-left: 50px; */
+    color: rgba(255,255,255,0.8);
+}
+
+.centerBottomCir{
+    width:80px;
+    height:80px;
+    margin:0px auto;
+    /*background-image: url(../img/blue_new.png);*/
+    background-attachment: scroll;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding:9px;
+    /*border:1px solid red;*/
+}
+
+/*.centerPartBottom h4{
+   padding: 8px 5px;    
+}*/
+
+.rightPart{
+    /*min-height:200px;*/
+    /*background-image: url(../img/bgR.jpg);*/
+    background-attachment: scroll;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*color:#ffffff;*/
+    /*border-right: 14px solid #f5f5f5;*/
+    /*border:1px solid red;*/
+    padding-top: 22px;
+    text-align: initial;
+    padding-left: 38px;
+}
+
+.rightCir{
+    width:50px;
+    height:50px;
+    margin: 23px auto;
+    margin-bottom: 7px;
+    background-image: url(../img/greenCir.png);
+    background-attachment: scroll;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*border:1px solid red;*/
+}
+.centerPartBottom
+{
+    /*background-color: black;*/
+    width: 78%;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0px 2px 22px 5px #aaa;
+    /* margin: 14px 5px 0px; */
+    margin-top: 20px;
+    height: 148px;
+    /*background-image: url(../../../../assets/custom/img/bg-blackColor.png);*/
+}
+.rightCir h2{padding: 17px 5px;font-size: 15px;color: white;}
+.rightCir p{
+margin:3px 5px;
+}
+
+.rightPart h4{
+    /*padding-top: 40px;*/
+    padding-bottom: 0px;
+    font-size:28px;
+}
+
+.form-control {
+    width: 95%;
+    margin: 8px auto;
+    border-radius: 0px;
+    height: 26px;
+    padding: 4px 9px;
+}
+.margin2{
+margin-top:-54px;   
+}
+.text_center{
+    color: black;
+}
+.leftCurrent{
+   padding-top: 19px;
+   text-align: initial;
+    padding-left: 38px;
+}
+.underline1{
+    border-bottom: 1px solid black;
+}
+
+/* NITHIN CSS */
+
+div#dv_salary_increase_part1 {
+    min-height: 0px;
+}
+/*.bg-1{
+    background-image: url(/opt/lampp/htdocs/portal/assets/images/roughback.jpg);
+    background-size: cover;
+    background-color: blanchedalmond;
+}*/
+
+div#comparison_with_peers{
+    text-align: center;
+    /* margin-top: 20px; */
+    width: 100%;
+    /* border: 1px solid; */
+    height: 217px;
+    margin: 81px 0 0 0;
+    padding: 25px 0 0 0;
+}
+/*div#salary_movement_chart{*/
+    height: 278px;
+}
+div#comparison_with_team{
+    text-align: center;
+    /* margin-top: 20px; */
+    width: 279px;
+    border: 1px solid;
+    height: 217px;
+    margin: 81px 0 0 -7px;
+    background color: white;
+    
+}
+
+h4.text-center {
+    font-size: 16px;
+    font-weight: 400;
+
+}
+h4#view_emp_salary_salary {
+    font-size: 11px;
+   
+    color: rgba(255,255,255,0.7);
+    margin-top: -5px;
+    
+}
+.s1,.s3{
+    font-weight: 500;
+    font-size: 14px;
+}
+.s2{
+    font-size: 15px;
+    font-weight: 0;
+}
+h4#view_final_salary {
+    font-weight: 100;
+    font-size: 13px;
+    color: black;
+    margin-top: -5px;
+}
+.s3{
+    color: black;
+}
+.padLess1{
+    /*border: 1px solid;*/
+    background: white;
+    margin: 30px 0px 0px 0;
+}
+.bottomCir{
+    width: 49px;
+    height: 49px;
+    margin: 23px auto;
+    margin-bottom: 5px;
+    background-image: url(../img/blueCirPlus.png);
+    background-attachment: scroll;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .bottomCir h2{padding: 17px 5px;font-size: 16px;color: white;}
+.bottomCir p{
+margin:3px 5px;
+}

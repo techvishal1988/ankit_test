@@ -1,0 +1,49 @@
+node {       
+    
+    try {
+        withCredentials([string(credentialsId: 'ecr_access_key', 
+            variable: 'ACCESS_KEY'), 
+            string(credentialsId: 'ecr_secret_access_key', 
+            variable: 'SECRET_KEY')]) {
+
+			stage('Notify and checkout') {
+				notifyBuild('STARTED')
+				scmVars = checkout scm 
+			}
+
+			stage('Build images') {
+				sh 'REGISTRY_URL=${REGISTRY_URL} DOCKER_BUILD_TAG=' + scmVars.GIT_COMMIT + ' docker-compose -f deploy/docker-compose.yml build'
+
+                sh 'REGISTRY_URL_WEB=${REGISTRY_URL_WEB} DOCKER_BUILD_TAG_WEB=' + scmVars.GIT_COMMIT + ' docker-compose -f deploy/docker-compose-web.yml build'
+			}
+
+
+            stage('Push to registry'){
+                sh '$(AWS_ACCESS_KEY_ID=$ACCESS_KEY AWS_SECRET_ACCESS_KEY=$SECRET_KEY aws ecr get-login --no-include-email --region us-west-2)'
+
+                sh 'REGISTRY_URL=${REGISTRY_URL} DOCKER_BUILD_TAG=' + scmVars.GIT_COMMIT + ' docker-compose -f deploy/docker-compose.yml push'
+
+                sh 'REGISTRY_URL_WEB=${REGISTRY_URL_WEB} DOCKER_BUILD_TAG_WEB=' + scmVars.GIT_COMMIT + ' docker-compose -f deploy/docker-compose-web.yml push'
+            }
+
+            stage('Deploy the tag'){
+                build job: 'user-deploy', parameters: [string(name: 'DOCKER_BUILD_TAG', value: scmVars.GIT_COMMIT), string(name: 'DOCKER_BUILD_TAG_WEB', value: scmVars.GIT_COMMIT)]
+			
+            }
+			
+		}
+    } catch (e) {
+        // If there was an exception thrown, the build failed
+        currentBuild.result = "FAILED"
+        throw e
+    } finally {
+        // Success or failure, always send notifications
+        notifyBuild(currentBuild.result)
+    }
+}
+
+def notifyBuild(String buildStatus = 'STARTED') {
+    
+
+}
+

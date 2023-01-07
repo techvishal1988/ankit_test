@@ -1,0 +1,35 @@
+version: "3.5"
+services:
+  comp-ben-user-app:
+    image: ${REGISTRY_URL:-829767151170.dkr.ecr.us-west-2.amazonaws.com/comp-ben-user-app}:${DOCKER_BUILD_TAG:-latest}
+    ports:
+      - "8080:80"
+    networks:
+      - comp-ben-net
+    volumes:
+      - file-uploads:/app/uploads
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 1
+        delay: 10s
+    environment:
+      - SERVER_NAME=bfsuat.compport.com
+      - SERVER_ALIAS=bfsuat.compport.com
+      - SERVER_ADMIN=rakesh.saoji@appworks.co.in
+      - USER_PORTAL_BASE_URL=https://bfsuat.compport.com/user-portal/
+      - ADMIN_PORTAL_BASE_URL=https://bfsuat.compport.com/admin-portal/
+      - EMAIL_FROM=noreply@compben.awtech.in
+    secrets:
+      - source: credentials
+        target: /conf/credentials.conf
+        uid: '100'
+volumes:
+  file-uploads:
+networks:
+  comp-ben-net:
+    external: true
+secrets:
+  credentials:
+    external:
+      name: credentials.apache

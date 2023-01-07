@@ -1,0 +1,197 @@
+/* width */
+::-webkit-scrollbar {width: 10px; right: 4px; height: 10px;}
+::-ms-scrollbar {width: 10px; right: 4px; height: 10px;}
+/* Track */
+::-webkit-scrollbar-track { background: #f1f1f1;}
+ ::-ms-scrollbar-track { background: #f1f1f1;}
+/* Handle */
+::-webkit-scrollbar-thumb {background: #969696; border-radius: 30px;}
+::-ms-scrollbar-thumb {background: #969696; border-radius: 30px;}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {background: #555;}
+::-ms-scrollbar-thumb:hover {background: #555;}
+
+body, html{font-family:'Century Gothic Regular' !important; }
+
+@font-face {
+font-family: 'Century Gothic Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Century Gothic Regular'), url('../fonts/GOTHIC.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Century Gothic Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Century Gothic Italic'), url('../fonts/GOTHICI.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Century Gothic Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Century Gothic Bold'), url('../fonts/GOTHICB.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Century Gothic Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Century Gothic Bold Italic'), url('../fonts/GOTHICBI.woff') format('woff');
+}
+
+
+/****** common class for btn padding margin *******/
+.text-bold{font-weight: bold;}
+.width-100{width:100%;}
+.width-90{width:90%;}
+.width-80{width:80%;}
+.width-70{width:70%;}
+.width-60{width:60%;}
+.width-50{width:50%;}
+.width-40{width:40%;}
+.width-30{width:30%;}
+.width-20{width:20%;}
+.width-10{width:10%;}
+
+
+
+
+.btn-w50{width:50px;}
+.btn-w60{width:60px;}
+.btn-w70{width:70px;}
+.btn-w80{width:80px;}
+.btn-w90{width:90px;}
+.btn-w94{width:94px;}
+.btn-w120{width:120px;}
+.btn-w130{width:130px;}
+.btn-w165{width:165px;}
+
+.martp5{margin-top: 5px;}
+.martp10{margin-top: 10px;}
+.martp15{margin-top: 15px;}
+.martp20{margin-top: 20px;}
+.martp25{margin-top: 25px;}
+
+.marbt5{margin-bottom: 5px;}
+.marbt10{margin-bottom: 10px;}
+.marbt15{margin-bottom: 15px;}
+.marbt20{margin-bottom: 20px;}
+.marbt25{margin-bottom: 25px;}
+
+.marlt5{margin-left: 5px;}
+.marlt10{margin-left: 10px;}
+.marlt15{margin-left: 15px;}
+.marlt20{margin-left: 20px;}
+.marlt25{margin-left: 25px;}
+
+.marrt5{margin-right: 5px;}
+.marrt10{margin-right: 10px;}
+.marrt15{margin-right: 15px;}
+.marrt20{margin-right: 20px;}
+.marrt25{margin-right: 25px;}
+
+.padtp0{padding-top: 0px;}
+.padtp5{padding-top: 5px;}
+.padtp10{padding-top: 10px;}
+.padtp15{padding-top: 15px;}
+.padtp20{padding-top: 20px;}
+.padtp25{padding-top: 25px;}
+
+.padbt0{padding-bottom: 0px;}
+.padbt5{padding-bottom: 5px;}
+.padbt10{padding-bottom: 10px;}
+.padbt15{padding-bottom: 15px;}
+.padbt20{padding-bottom: 20px;}
+.padbt25{padding-bottom: 25px;}
+
+.padlt0{padding-left: 0px;}
+.padlt5{padding-left: 5px;}
+.padlt10{padding-left: 10px;}
+.padlt15{padding-left: 15px;}
+.padlt20{padding-left: 20px;}
+.padlt25{padding-left: 25px;}
+
+.padrt0{padding-right: 0px;}
+.padrt5{padding-right: 5px;}
+.padrt10{padding-right: 10px;}
+.padrt15{padding-right: 15px;}
+.padrt20{padding-right: 20px;}
+.padrt25{padding-right: 25px;}
+
+/****** common class for btn padding margin *******/
+
+.container-fluid.compp_fluid{padding-right: 3.2%; padding-left: 3.2%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****** media query for diffrent laptop resolutions *******/
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+  	.center-box-new .new-cd table tr td{font-size: 13px !important;}
+}
+
+@media screen 
+  and (min-device-width: 1601px) 
+  and (max-device-width: 2000px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+  	.center-box-new .new-cd table tr td{font-size: 16px !important;}
+   
+}
+
+
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+  	.center-box-new .new-cd table tr td{font-size: 13px !important;}
+}
+
+@media screen 
+  and (min-device-width: 1601px) 
+  and (max-device-width: 2000px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+  	.center-box-new .new-cd table tr td{font-size: 16px !important;}
+}
+
+
+/****** media query for diffrent laptop resolutions *******/

@@ -1,0 +1,90 @@
+body.bg{
+	background: url(../img/bg-1.png) center center fixed;
+	background-size: cover;
+}
+.card-1{
+	background: url(../img/card-1.png);
+	background-size: contain;
+	padding: 15px;
+	margin-top: 6px;
+	padding-bottom: 25px;
+	 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.card-1:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card-2{
+	background: #fff;
+	padding: 15px;
+	margin-top: 6px;
+	padding-bottom: 0px;
+	padding-top: 20px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.card-2:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-1-left {
+    width: 50%;
+    float: left;
+}
+
+.card-1-right {
+    width: 50%;
+    float: left;
+}
+.card-1-c{
+	background: url(../img/c1-cricle.png);
+	width: 50px;
+	display: block;
+	height: 50px;
+	background-size: cover;
+	text-align: center;
+	padding-top: 14px;
+	color: #fff;
+}
+.card-1-right p {
+    text-align: right;
+}
+.card-1 h3 {
+    margin-top: 7px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+.card-1-left p {
+    margin-bottom: 0px;
+}
+.black-card-1{
+	background: url(../img/black-card.png);
+	background-size: 100%;
+	color: #fff;
+	padding: 15px;
+	background-repeat: no-repeat;
+	padding-bottom: 30px;
+}
+.black-card-1 h3 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.black-card-1 img {
+    margin-top: 15px;
+    width: 28px;
+    float: right;
+}
+.black-card-1 h2 {
+    margin-top: 15px;
+    float: right;
+}
+.card-1-c2{
+	background: url(../img/c2-cricle.png);
+	width: 50px;
+	display: block;
+	height: 50px;
+	background-size: cover;
+	text-align: center;
+	padding-top: 14px;
+	color: #fff;
+}

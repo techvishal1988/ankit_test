@@ -1,0 +1,35 @@
+node {       
+    
+    try {
+        stage('Notify and checkout') {
+            notifyBuild('STARTED')
+            scmVars = checkout scm 
+        }
+
+        stage('deploy'){
+            
+
+            echo 'Deploying....'
+            
+            sshagent([env.DEPLOY_SERVER_SSH]) {
+                sh 'scp -o StrictHostKeyChecking=no deploy/stack-deploy.* ${DEPLOY_SERVER_LOGIN}:~/'
+                sh 'ssh -o StrictHostKeyChecking=no ${DEPLOY_SERVER_LOGIN} "chmod +x stack-deploy.sh;REGISTRY_URL=${REGISTRY_URL} DOCKER_BUILD_TAG=${DOCKER_BUILD_TAG} REGISTRY_URL_WEB=${REGISTRY_URL_WEB} DOCKER_BUILD_TAG_WEB=${DOCKER_BUILD_TAG_WEB} ./stack-deploy.sh"'
+            }
+
+        }
+
+    } catch (e) {
+        // Build fails if there is an exception
+        currentBuild.result = "FAILED"
+        throw e
+    } finally {
+        // Success or failure, always send notifications
+        notifyBuild(currentBuild.result)
+    }
+}
+
+def notifyBuild(String buildStatus = 'STARTED') {
+    
+
+}
+

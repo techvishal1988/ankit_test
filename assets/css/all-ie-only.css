@@ -1,0 +1,6 @@
+.horizontal-bar .accordion-menu li ul.repotrs_div{
+    width: 450px !important;
+}
+
+.white{color:#000 !important;}
+.report-selected-text.form-control{min-width:100px;}

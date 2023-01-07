@@ -1,0 +1,7 @@
+version: "3.5"
+services:
+  comp-ben-user-app:
+    build: 
+      context: ../
+      dockerfile: ./deploy/Dockerfile
+    image: ${REGISTRY_URL:-asia.gcr.io/saas-stage/comp-ben-user-app}:${DOCKER_BUILD_TAG:-latest}
