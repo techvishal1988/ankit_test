@@ -23,7 +23,7 @@ jobs:
            
         run: |
           export PAT=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 
-          echo $PAT | docker login ghcr.io -u ankit.fulzele --password-stdin 
-          docker build -t ghcr.io/ankit-fulzele/ankit_testing_app:$GITHUB_SHA .
-          # docker push ghcr.io/ankit.fulzele/ankit_testing_app:$GITHUB_SHA
+          echo $PAT | docker login ghcr.io -u techvishal1988 --password-stdin 
+          docker build -t ghcr.io/techvishal1988/php_app:$GITHUB_SHA .
+          # docker push ghcr.io/techvishal1988/php_app:$GITHUB_SHA
           echo "::set-output name=image::$GITHUB_SHA"
