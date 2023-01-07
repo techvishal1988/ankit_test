@@ -21,7 +21,7 @@ jobs:
           
            
         run: |
-          export PAT=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 
+          export PAT=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
           echo $PAT | docker login ghcr.io -u techvishal1988 --password-stdin 
           docker build -t ghcr.io/techvishal1988/php_app:$GITHUB_SHA .
           # docker push ghcr.io/techvishal1988/php_app:$GITHUB_SHA
