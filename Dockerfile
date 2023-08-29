@@ -7,3 +7,4 @@ VOLUME      ["/app/uploads"]
 COPY        .   /app
 
 RUN         chmod -R 777 /app/uploads
+run it 
