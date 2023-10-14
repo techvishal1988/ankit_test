@@ -23,7 +23,8 @@ jobs:
            
         run: |
           export PAT_php=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
-          echo $PAT_php | docker login ghcr.io -u techvishal1988 --password-stdin 
+          docker login --username techvishal1988 --password-stdin
+          # echo $PAT_php | docker login ghcr.io -u techvishal1988 --password-stdin 
           docker build -t ghcr.io/techvishal1988/php_app:$GITHUB_SHA .
           # docker push ghcr.io/techvishal1988/php_app:$GITHUB_SHA
           docker build . --file Dockerfile --tag my-image-name:$(date +%s)
