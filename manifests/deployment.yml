@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: techvishalankittest 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: techvishalankittest
+  template:
+    metadata:
+      labels:
+        app: techvishalankittest 
+    spec:
+      containers:
+        - name: techvishalankittest 
+          image: acr4pcr.azurecr.io/techvishalankittest
+          ports:
+          - containerPort: 80
